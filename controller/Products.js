@@ -8,7 +8,6 @@ let allproduct=async(req,res)=>{
 }
 let singleproduct=async (req, res) => {
   let id = req.params.id
-
   let data = await Products.find({id:+id})
   res.json(data)
 }
